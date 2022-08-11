@@ -1,0 +1,53 @@
+/*Efecto 1 Triangulo Camufalejado*/
+.sombra-fija{
+	transform: translateX(0px);
+
+}
+.sombra-fija:before{
+	content: ' ';
+	position: absolute;
+	left: 5%;
+	top: 100%;
+	width: 90%;
+	height: 12%;
+	background:-webkit-radial-gradient(center,ellipse,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.0) 80%);
+	transition-duration: 0.7s;
+}
+.sombra-fija:hover{
+	transform: translateY(-10px);
+	transition-duration: 0.4s;
+}
+.sombra-fija:hover:before{
+	transform: translateY(5px);
+	background:-webkit-radial-gradient(center,ellipse,rgba(255,255,255,0.55) 0%,rgba(0,0,0,0.2) 80%);
+}
+/*Navegador*/
+nav li:hover a{
+	color:rgb(197, 10, 10);
+
+}
+nav li:hover {
+	transform: scale(1.2);
+	box-shadow: 0px 0px 2px black;
+}
+header:hover h1{
+	transform: scale(1.1,1.1);
+	color:rgb(92, 195, 255);
+	font-family: 'anime' ;
+	text-shadow: 2px 2px 1px  rgb(71, 71, 71),4px 4px 2px rgb(29, 48, 48),5px 5px 1px  rgb(0, 0, 0);
+}
+.logo:hover{
+	transform: scale(1.2,1.2) ;
+}
+.logo:hover img{
+	animation: giro linear infinite;
+}
+
+@keyframes giro {
+	0%{
+		transform: rotatez(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

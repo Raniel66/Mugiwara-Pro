@@ -1,0 +1,106 @@
+/*Fuentes*/
+
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype");
+    src: url("fonts/nevis.woff") format("woff");
+    src: url("fonts/nevis.ttf") format("truetype");
+    src: url("fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "anime";
+    src: url("font/animeace2bb_ot/animeace2_bld.otf");
+    src: url("font/animeace2bb_ot/animeace2_reg.otf");
+    src: url("font/animeace2bb_tt/animeace2_bld.ttf") format("truetype");
+    src: url(font/animeace2bb_tt/animeace2_reg.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("font/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"), url("font/websymbols-regular-webfont.eot");
+    src: url("font/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype");
+    src: url("font/websymbols-regular-webfont.woff") format("woff");
+    src: url("font/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contenedor {
+    float: left;
+    width: 45%;
+    height: 400px;
+    margin: auto;
+    perspective: 700;
+    margin: 2%;
+}
+
+.carta {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+}
+
+.lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 12%;
+}
+
+.frente {
+    background-color: rgb(15, 2, 4);
+}
+
+.atras {
+    background-color: rgba(172, 170, 170, 0.466);
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12%;
+}
+
+.info {
+    color: rgb(255, 249, 249);
+    font-size: 0.9rem;
+    text-align: justify;
+    text-shadow: 0px 0px 1px black, 1px 1px 2px black;
+    position: relative;
+    top: 10%;
+    margin: 0px;
+    margin: 0px 1em;
+}
+
+h4 {
+    position: relative;
+    font-family: "anime";
+    top: 5%;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px black, 1px 2px 1px black, 1px 3px 1px black;
+    color: rgb(10, 236, 236);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
